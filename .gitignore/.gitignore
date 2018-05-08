@@ -1,0 +1,10 @@
+#!/bin/bash
+
+wget -sO /tmp/falcon-sensor.deb https://goo.gl/2NHhEJ..../falcon-sensor_4.3.0-4603_amd64.deb
+
+sudo dpkg -i /tmp/falcon-sensor.deb
+
+sudo /opt/CrowdStrike/falconctl -s --cid=921EDDE8F7E34E2282424764DC98B34B-60
+service falcon-sensor start
+systemctl start falcon-sensor
+ps -e | grep falcon-sensor
