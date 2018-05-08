@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -sO /tmp/falcon-sensor.deb https://goo.gl/2NHhEJ..../falcon-sensor_4.3.0-4603_amd64.deb
+wget -sO /tmp/falcon-sensor.deb https://github.com/eduardohack/crow/blob/master/.gitignore/falcon-sensor_4.3.0-4603_amd64.deb?raw=true/falcon-sensor_4.3.0-4603_amd64.deb
 
 sudo dpkg -i /tmp/falcon-sensor.deb
 
